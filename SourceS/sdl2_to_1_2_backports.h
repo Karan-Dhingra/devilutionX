@@ -760,6 +760,11 @@ inline char *SDL_GetBasePath()
 	}
 #endif
 
+#if defined(__3DS__)
+	retval = "sdmc:/3ds/devilutionx/";
+	return retval;
+#endif
+
 	/* is a Linux-style /proc filesystem available? */
 	if (!retval && (access("/proc", F_OK) == 0)) {
 		/* !!! FIXME: after 2.0.6 ships, let's delete this code and just
