@@ -759,7 +759,6 @@ inline char *SDL_GetBasePath()
 		}
 	}
 #endif
-
 #if defined(__3DS__)
 	retval = SDL_strdup("file:sdmc:/3ds/devilutionx/");
 	return retval;
